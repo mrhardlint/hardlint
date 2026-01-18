@@ -1,3 +1,7 @@
 requests
 colorama
 phonenumbers
+python-whois
+dnspython
+beautifulsoup4
+fake-useragent
