@@ -25,7 +25,7 @@
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/itanbeluli12-debug/hardlint.git
+   git clone https://github.com/mrhardlint/hardlint.git
    cd hardlint
    ```
 
