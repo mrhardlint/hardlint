@@ -17,7 +17,9 @@ def check_leaks(query):
     ]
     
     for dork in dorks:
-        link = f"https://www.google.com/search?q={dork.replace(' ', '+').replace('\"', '%22')}"
+        # Fix: Can't use backslash in f-string expression, extract it first
+        quote_encoded = '%22'
+        link = f"https://www.google.com/search?q={dork.replace(' ', '+').replace('\"', quote_encoded)}"
         print(f"{Fore.BLUE}[~] Search: {link}{Style.RESET_ALL}")
 
     print(f"\n{Fore.GREEN}[+] Also check these free breach databases:{Style.RESET_ALL}")
